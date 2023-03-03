@@ -1,3 +1,6 @@
+using Microsoft.Extensions.Configuration;
+using ParanaBank.CrossCutting.IoC;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +10,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddRouting(options => options.LowercaseUrls = true);
+
+builder.Services.AddSqlServerConnection("ConnectionString");
+
+builder.Services.AddDependencyResolver();
 
 var app = builder.Build();
 

@@ -1,0 +1,15 @@
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\bin\Debug\net6.0\ParanaBank.Infrastructure.deps.json
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\bin\Debug\net6.0\ParanaBank.Infrastructure.dll
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\bin\Debug\net6.0\ParanaBank.Infrastructure.pdb
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\bin\Debug\net6.0\ParanaBank.Domain.dll
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\bin\Debug\net6.0\ParanaBank.Domain.pdb
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\obj\Debug\net6.0\ParanaBank.Infrastructure.csproj.AssemblyReference.cache
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\obj\Debug\net6.0\ParanaBank.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\obj\Debug\net6.0\ParanaBank.Infrastructure.AssemblyInfoInputs.cache
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\obj\Debug\net6.0\ParanaBank.Infrastructure.AssemblyInfo.cs
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\obj\Debug\net6.0\ParanaBank.Infrastructure.csproj.CoreCompileInputs.cache
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\obj\Debug\net6.0\ParanaBank.Infrastructure.csproj.CopyComplete
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\obj\Debug\net6.0\ParanaBank.Infrastructure.dll
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\obj\Debug\net6.0\refint\ParanaBank.Infrastructure.dll
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\obj\Debug\net6.0\ParanaBank.Infrastructure.pdb
+D:\project\Git\ParanaBank\ParanaBank.Infrastructure\obj\Debug\net6.0\ref\ParanaBank.Infrastructure.dll

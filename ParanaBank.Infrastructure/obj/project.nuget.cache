@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uOzFcUJGXIiPtkTGDrSGOO/X/81Ngu0ibG4mvac22ob9yXYl2L+/8hHkAPmnrkX+oP54BnVH8iOJZIQ8zG0zfQ==",
+  "success": true,
+  "projectFilePath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Infrastructure\\ParanaBank.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Maquina_2.0\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512"
+  ],
+  "logs": []
+}

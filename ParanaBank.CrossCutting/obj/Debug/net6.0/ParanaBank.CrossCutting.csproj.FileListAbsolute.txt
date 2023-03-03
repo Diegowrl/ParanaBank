@@ -1,0 +1,17 @@
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\bin\Debug\net6.0\ParanaBank.CrossCutting.deps.json
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\bin\Debug\net6.0\ParanaBank.CrossCutting.dll
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\bin\Debug\net6.0\ParanaBank.CrossCutting.pdb
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\obj\Debug\net6.0\ParanaBank.CrossCutting.csproj.AssemblyReference.cache
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\obj\Debug\net6.0\ParanaBank.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\obj\Debug\net6.0\ParanaBank.CrossCutting.AssemblyInfoInputs.cache
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\obj\Debug\net6.0\ParanaBank.CrossCutting.AssemblyInfo.cs
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\obj\Debug\net6.0\ParanaBank.CrossCutting.csproj.CoreCompileInputs.cache
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\obj\Debug\net6.0\ParanaBank.CrossCutting.dll
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\obj\Debug\net6.0\refint\ParanaBank.CrossCutting.dll
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\obj\Debug\net6.0\ParanaBank.CrossCutting.pdb
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\obj\Debug\net6.0\ref\ParanaBank.CrossCutting.dll
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\bin\Debug\net6.0\ParanaBank.Domain.dll
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\bin\Debug\net6.0\ParanaBank.Infrastructure.dll
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\bin\Debug\net6.0\ParanaBank.Infrastructure.pdb
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\bin\Debug\net6.0\ParanaBank.Domain.pdb
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\obj\Debug\net6.0\ParanaBank.CrossCutting.csproj.CopyComplete

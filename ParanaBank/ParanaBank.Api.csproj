@@ -10,4 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ParanaBank.Application\ParanaBank.Application.csproj" />
+    <ProjectReference Include="..\ParanaBank.CrossCutting\ParanaBank.CrossCutting.csproj" />
+    <ProjectReference Include="..\ParanaBank.Domain\ParanaBank.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
