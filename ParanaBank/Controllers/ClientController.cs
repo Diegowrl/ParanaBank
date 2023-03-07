@@ -32,7 +32,7 @@ namespace ParanaBank.Controllers
 
             var result = await _mediator.Send(new CreateCommand(client));
 
-            return StatusCode(result.Status);
+            return StatusCode(result.Status, result.Message);
         }
 
         [HttpGet]
@@ -63,7 +63,7 @@ namespace ParanaBank.Controllers
 
             var result = await _mediator.Send(new UpdateCommand(client));
 
-            return StatusCode(result.Status);
+            return StatusCode(result.Status, result.Message);
         }
 
 
@@ -75,7 +75,7 @@ namespace ParanaBank.Controllers
 
             var result = await _mediator.Send(new DeleteCommand(email));
 
-            return StatusCode(result.Status);
+            return StatusCode(result.Status, result.Message);
         }
     }
 }
