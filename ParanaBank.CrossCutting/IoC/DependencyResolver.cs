@@ -1,9 +1,12 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using ParanaBank.Application.Commands.Delete;
 using ParanaBank.Domain.Interfaces;
 using ParanaBank.Infrastructure.Repository;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
 
 namespace ParanaBank.CrossCutting.IoC
 {
@@ -13,6 +16,11 @@ namespace ParanaBank.CrossCutting.IoC
         public static void AddDependencyResolver(this IServiceCollection services)
         {
             RegisterRepositories(services);
+        }
+
+        public static void AddMediatRApi(this IServiceCollection services)
+        {
+            services.AddMediatR(typeof(DeleteCommandHandle).GetTypeInfo().Assembly);
         }
 
         private static void RegisterRepositories(IServiceCollection services)

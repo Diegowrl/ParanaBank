@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using ParanaBank.Application.Commands.Delete;
 using ParanaBank.Application.Models;
 using ParanaBank.Domain.Interfaces;
 
@@ -11,11 +13,13 @@ namespace ParanaBank.Controllers
 
         private readonly ILogger<ClientController> _logger;
         private readonly IClientRepository _clientRepository;
+        private readonly IMediator _mediator;
 
-        public ClientController(ILogger<ClientController> logger, IClientRepository clientRepository)
+        public ClientController(ILogger<ClientController> logger, IClientRepository clientRepository, IMediator mediator)
         {
             _logger = logger;
             _clientRepository = clientRepository;
+            _mediator = mediator;
         }
 
         [HttpPost]
@@ -49,13 +53,19 @@ namespace ParanaBank.Controllers
             return await Task.FromResult(0);
         }
 
+
         [HttpDelete]
         [Route("{email}")]
-        public async Task<int> Delete(string email)
+        public async Task<IActionResult> Delete(string email)
         {
+
+            var command = new DeleteCommand(email);
+
+            var xxx = await _mediator.Send(command);
+
             var result = _clientRepository.Delete(email);
 
-            return await Task.FromResult(0);
+            return StatusCode(200, result);
         }
     }
 }

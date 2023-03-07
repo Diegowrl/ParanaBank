@@ -46,3 +46,10 @@ D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\runtimes\unix\lib\netcorea
 D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\ParanaBank.Infrastructure.dll
 D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\ParanaBank.Infrastructure.pdb
+D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\MediatR.dll
+D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\MediatR.Contracts.dll
+D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\Newtonsoft.Json.dll

@@ -3,6 +3,8 @@ using ParanaBank.CrossCutting.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var configuration = builder.Configuration;
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -13,9 +15,13 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
-builder.Services.AddSqlServerConnection("ConnectionString");
+//builder.Services.AddSqlServerConnection("Data Source=(localdb)\\Local; Initial Catalog=ParanaBankDb;");
+builder.Services.AddSqlServerConnection(configuration.GetConnectionString("DefaultConnection"));
 
 builder.Services.AddDependencyResolver();
+;
+
+builder.Services.AddMediatRApi();
 
 var app = builder.Build();
 

@@ -15,3 +15,5 @@ D:\project\Git\ParanaBank\ParanaBank.CrossCutting\bin\Debug\net6.0\ParanaBank.In
 D:\project\Git\ParanaBank\ParanaBank.CrossCutting\bin\Debug\net6.0\ParanaBank.Infrastructure.pdb
 D:\project\Git\ParanaBank\ParanaBank.CrossCutting\bin\Debug\net6.0\ParanaBank.Domain.pdb
 D:\project\Git\ParanaBank\ParanaBank.CrossCutting\obj\Debug\net6.0\ParanaBank.CrossCutting.csproj.CopyComplete
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\bin\Debug\net6.0\ParanaBank.Application.dll
+D:\project\Git\ParanaBank\ParanaBank.CrossCutting\bin\Debug\net6.0\ParanaBank.Application.pdb

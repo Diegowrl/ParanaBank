@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ParanaBank.Application\ParanaBank.Application.csproj" />
     <ProjectReference Include="..\ParanaBank.Infrastructure\ParanaBank.Infrastructure.csproj" />
   </ItemGroup>
 

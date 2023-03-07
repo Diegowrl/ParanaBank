@@ -32,7 +32,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -44,6 +48,24 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -93,6 +115,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.Application\\ParanaBank.Application.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Application\\ParanaBank.Application.csproj"
+              },
               "D:\\project\\Git\\ParanaBank\\ParanaBank.Infrastructure\\ParanaBank.Infrastructure.csproj": {
                 "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Infrastructure\\ParanaBank.Infrastructure.csproj"
               }

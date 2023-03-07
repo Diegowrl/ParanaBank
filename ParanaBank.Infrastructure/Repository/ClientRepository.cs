@@ -25,14 +25,16 @@ namespace ParanaBank.Infrastructure.Repository
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@Email", email, DbType.String);
 
-            return await Connection.QueryFirstAsync<Client>(ClientQuery.SQL_GET_BY_EMAIL, parameters);
+            var client = await Connection.QueryFirstOrDefaultAsync<Client>(ClientQuery.SQL_GET_BY_EMAIL, parameters);
+
+            return client;
         }
         public async Task Add(Client client)
         {
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@Email", client.Email, DbType.String);
             parameters.Add("@User", client.User, DbType.String);
-            parameters.Add("@CreatedAt", client.CreatedAt, DbType.DateTime);
+            parameters.Add("@CreatedAt", DateTime.Now, DbType.DateTime);
             parameters.Add("@Id", Guid.NewGuid(), DbType.Guid);
 
             await Connection.ExecuteAsync(ClientQuery.SQL_GET_BY_EMAIL, parameters);

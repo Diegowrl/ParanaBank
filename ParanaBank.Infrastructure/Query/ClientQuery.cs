@@ -20,14 +20,7 @@ namespace ParanaBank.Infrastructure.Query
 		";
 
         public const string SQL_GET_BY_EMAIL = @"
-			INSERT INTO dbo.Schedule
-			(
-				ScheduleId
-			)
-			VALUES 
-			(
-				@ScheduleId
-			)
+			select * from [dbo].[Client] where Email = @Email
 		";
 
         public const string SQL_UPDATE = @"
