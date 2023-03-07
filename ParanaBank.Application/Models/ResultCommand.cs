@@ -11,9 +11,9 @@ namespace ParanaBank.Application.Models
         {
             return CreateResponse(StatusCodes.Status404NotFound, message);
         }
-        public static ResultCommand Error()
+        public static ResultCommand Error(string message)
         {
-            return CreateResponse(StatusCodes.Status500InternalServerError);
+            return CreateResponse(StatusCodes.Status500InternalServerError,message);
         }
         public static ResultCommand Ok(string message)
         {

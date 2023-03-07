@@ -30,15 +30,14 @@ namespace ParanaBank.Application.Commands.Delete
             try
             {
                 await _clientRepository.DeleteByEmail(client.Email);
+
+                return ResultCommand.Ok("User Deleted");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                _logger.LogError("Error to delete user on database");
-                return ResultCommand.Error();
+                _logger.LogError(ex.Message);
+                return ResultCommand.Error("Error to delete user on database");
             }
-
-
-            return ResultCommand.Ok();
         }
     }
 }

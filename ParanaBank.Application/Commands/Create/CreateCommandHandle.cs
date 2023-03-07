@@ -37,15 +37,14 @@ namespace ParanaBank.Application.Commands.Create
             try
             {
                 await _clientRepository.Add(client);
+
+                return ResultCommand.Ok("User created");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                _logger.LogError("Error to add user on database");
-                return ResultCommand.Error();
+                _logger.LogError(ex.Message);
+                return ResultCommand.Error("Error to add user on database");
             }
-
-
-            return ResultCommand.Ok();
         }
     }
 }

@@ -34,15 +34,14 @@ namespace ParanaBank.Application.Commands.Update
             try
             {
                 await _clientRepository.UpdateByEmailAndUser(client);
+
+                return ResultCommand.Ok("User Updated");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                _logger.LogError("Error to Update user on database");
-                return ResultCommand.Error();
+                _logger.LogError(ex.Message);
+                return ResultCommand.Error("Error to Update user on database");
             }
-
-
-            return ResultCommand.Ok();
         }
     }
 }
