@@ -29,7 +29,7 @@ namespace ParanaBank.Application.Commands.Delete
 
             try
             {
-                await _clientRepository.Delete(client.Email);
+                await _clientRepository.DeleteByEmail(client.Email);
             }
             catch (Exception)
             {

@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using ParanaBank.Application.Commands.Create;
 using ParanaBank.Application.Commands.Delete;
+using ParanaBank.Application.Commands.Update;
 using ParanaBank.Domain.Interfaces;
 using ParanaBank.Infrastructure.Repository;
 using System.Data;
@@ -21,6 +23,8 @@ namespace ParanaBank.CrossCutting.IoC
         public static void AddMediatRApi(this IServiceCollection services)
         {
             services.AddMediatR(typeof(DeleteCommandHandle).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(CreateCommandHandle).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(UpdateCommandHandle).GetTypeInfo().Assembly);
         }
 
         private static void RegisterRepositories(IServiceCollection services)

@@ -14,7 +14,16 @@ namespace ParanaBank.Infrastructure.Repository
         {
             Connection = connection ?? throw new ArgumentNullException(nameof(connection));
         }
+        public async Task Add(Client client)
+        {
+            DynamicParameters parameters = new DynamicParameters();
+            parameters.Add("@Email", client.Email, DbType.String);
+            parameters.Add("@User", client.UserName, DbType.String);
+            parameters.Add("@CreatedAt", client.CreatedAt, DbType.DateTimeOffset);
+            parameters.Add("@Id", client.Id, DbType.Guid);
 
+            await Connection.ExecuteAsync(ClientQuery.SQL_ADD, parameters);
+        }
         public async Task<IEnumerable<Client>> GetAll()
         {
            return await Connection.QueryAsync<Client>(ClientQuery.SQL_GET_ALL);
@@ -25,35 +34,47 @@ namespace ParanaBank.Infrastructure.Repository
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@Email", email, DbType.String);
 
-            var client = await Connection.QueryFirstOrDefaultAsync<Client>(ClientQuery.SQL_GET_BY_EMAIL, parameters);
+            var result = await Connection.QueryFirstOrDefaultAsync<Client>(ClientQuery.SQL_GET_BY_EMAIL, parameters);
 
-            return client;
+            return result;
         }
-        public async Task Add(Client client)
+
+        public async Task<Client> GetByEmailAndUser(Client client)
         {
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@Email", client.Email, DbType.String);
-            parameters.Add("@User", client.User, DbType.String);
-            parameters.Add("@CreatedAt", DateTime.Now, DbType.DateTime);
-            parameters.Add("@Id", Guid.NewGuid(), DbType.Guid);
+            parameters.Add("@User", client.UserName, DbType.String);
 
-            await Connection.ExecuteAsync(ClientQuery.SQL_GET_BY_EMAIL, parameters);
+            var result = await Connection.QueryFirstOrDefaultAsync<Client>(ClientQuery.SQL_GET_BY_EMAIL_AND_USER, parameters);
+
+            return result;
         }
 
-        public async Task Delete(string email)
+        public async Task<Client> GetByEmailOrUser(Client client)
+        {
+            DynamicParameters parameters = new DynamicParameters();
+            parameters.Add("@Email", client.Email, DbType.String);
+            parameters.Add("@User", client.UserName, DbType.String);
+
+            var result = await Connection.QueryFirstOrDefaultAsync<Client>(ClientQuery.SQL_GET_BY_EMAIL_OR_USER, parameters);
+
+            return result;
+        }
+
+        public async Task DeleteByEmail(string email)
         {
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@Email", email, DbType.String);
 
             await Connection.ExecuteAsync(ClientQuery.SQL_DELETE_BY_EMAIL, parameters);
         }
-
-        public async Task Update(Client client)
+        public async Task UpdateByEmailAndUser(Client client)
         {
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@Email", client.Email, DbType.String);
-            parameters.Add("@User", client.User, DbType.String);
-            parameters.Add("@UpdatedAt", DateTime.Now, DbType.DateTime);
+            parameters.Add("@User", client.UserName, DbType.String);
+            parameters.Add("@UpdatedAt", DateTime.Now, DbType.DateTimeOffset);
+
             await Connection.ExecuteAsync(ClientQuery.SQL_UPDATE, parameters);
         }
     }

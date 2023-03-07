@@ -15,11 +15,11 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
-//builder.Services.AddSqlServerConnection("Data Source=(localdb)\\Local; Initial Catalog=ParanaBankDb;");
 builder.Services.AddSqlServerConnection(configuration.GetConnectionString("DefaultConnection"));
 
 builder.Services.AddDependencyResolver();
-;
+
+builder.Services.AddAutoMapper(AssemblyUtil.GetCurrentAssemblies());
 
 builder.Services.AddMediatRApi();
 

@@ -53,3 +53,5 @@ D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\Microsoft.DotNet.PlatformA
 D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\AutoMapper.dll
+D:\project\Git\ParanaBank\ParanaBank\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -9,7 +9,7 @@ namespace ParanaBank.Application.Models
 
         [Required(ErrorMessage = "{0} can't be null")]
         [DataType(DataType.EmailAddress, ErrorMessage = "E-mail em format invalid.")]
-        [RegularExpression(@"b[A-Z0-9._%-]+@[A-Z0-9.-]+.[A-Z]{2,4}b", ErrorMessage = "E-mail em format invalid.")]
+        [RegularExpression(@"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$", ErrorMessage = "E-mail em format invalid.")]
         public string Email { get; set; }
     }
 }

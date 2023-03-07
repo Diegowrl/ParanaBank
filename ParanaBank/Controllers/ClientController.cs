@@ -1,7 +1,10 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using ParanaBank.Application.Commands.Create;
 using ParanaBank.Application.Commands.Delete;
+using ParanaBank.Application.Commands.Update;
 using ParanaBank.Application.Models;
+using ParanaBank.Domain.Entity;
 using ParanaBank.Domain.Interfaces;
 
 namespace ParanaBank.Controllers
@@ -23,33 +26,36 @@ namespace ParanaBank.Controllers
         }
 
         [HttpPost]
-        public async Task<int> Post(ClientModel clientModel)
+        public async Task<IActionResult> Post(ClientModel client)
         {
-            return await Task.FromResult(0);
+            var result = await _mediator.Send(new CreateCommand(client));
+
+            return StatusCode(result.Status);
         }
 
         [HttpGet]
-        public async Task<int> Get()
+        public async Task<IEnumerable<Client>> Get()
         {
+            var result = await _clientRepository.GetAll();
 
-            var result = _clientRepository.GetAll();
-
-           return await Task.FromResult(0);
+           return result;
         }
 
         [HttpGet]
         [Route("{email}")]
-        public async Task<int> GetByEmail(string email)
+        public async Task<Client> GetByEmail(string email)
         {
 
-            var result = _clientRepository.GetByEmail(email);
+            var result = await _clientRepository.GetByEmail(email);
 
-            return await Task.FromResult(0);
+            return result;
         }
 
         [HttpPut]
         public async Task<int> Update([FromBody] ClientModel client)
         {
+            var result = await _mediator.Send(new UpdateCommand(client));
+
             return await Task.FromResult(0);
         }
 
@@ -59,13 +65,9 @@ namespace ParanaBank.Controllers
         public async Task<IActionResult> Delete(string email)
         {
 
-            var command = new DeleteCommand(email);
+            var result = await _mediator.Send(new DeleteCommand(email));
 
-            var xxx = await _mediator.Send(command);
-
-            var result = _clientRepository.Delete(email);
-
-            return StatusCode(200, result);
+            return StatusCode(result.Status);
         }
     }
 }

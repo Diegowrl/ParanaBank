@@ -3,9 +3,15 @@
     public class Client
     {
         public Guid? Id { get; set; }
-        public string User { get; set; }
+        public string UserName { get; set; }
         public string Email { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdateAt { get; set; }
+        public DateTimeOffset CreatedAt { get; set; }
+        public DateTimeOffset UpdateAt { get; set; }
+
+        public void CreateUser()
+        {
+            Id = Guid.NewGuid();
+            CreatedAt = DateTime.Now;
+        }
     }
 }

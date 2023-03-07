@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "M+p1FBxG+YLrsDV5lRZhjtEBbHWkAqJwBB5HBdJLedjTU7NJBGZ7S0Q0/nS2ZYoC3y9+RYghJNyXbrD+4jgbYQ==",
+  "dgSpecHash": "DvLDuiplzXKM0j9n9z+MEStoeCP2FEc/yIoU5sfQRTjNAJgbn0pqxI/UxR3FXS9ANrfT0r/JZcEJLD9NlAtbbA==",
   "success": true,
   "projectFilePath": "D:\\project\\Git\\ParanaBank\\ParanaBank.CrossCutting\\ParanaBank.CrossCutting.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Maquina_2.0\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Maquina_2.0\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Maquina_2.0\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\Maquina_2.0\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
@@ -24,7 +25,7 @@
     "C:\\Users\\Maquina_2.0\\.nuget\\packages\\microsoft.aspnetcore.routing\\2.2.0\\microsoft.aspnetcore.routing.2.2.0.nupkg.sha512",
     "C:\\Users\\Maquina_2.0\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Maquina_2.0\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
-    "C:\\Users\\Maquina_2.0\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
+    "C:\\Users\\Maquina_2.0\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Maquina_2.0\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.1.0\\microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\Maquina_2.0\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.2.0\\microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Maquina_2.0\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.2.0\\microsoft.extensions.dependencyinjection.2.2.0.nupkg.sha512",

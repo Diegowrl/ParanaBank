@@ -10,9 +10,11 @@ namespace ParanaBank.Domain.Interfaces
     public interface IClientRepository
     {
         Task<Client> GetByEmail(string email);
+        Task<Client> GetByEmailAndUser(Client client);
+        Task<Client> GetByEmailOrUser(Client client);
         Task<IEnumerable<Client>> GetAll();
         Task Add(Client client);
-        Task Update(Client client);
-        Task Delete(string email);
+        Task UpdateByEmailAndUser(Client client);
+        Task DeleteByEmail(string email);
     }
 }
