@@ -1,9 +1,4 @@
 ﻿using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ParanaBank.Application.Models
 {
@@ -12,17 +7,26 @@ namespace ParanaBank.Application.Models
         public int Status { get; set; }
         public string Message { get; set; }
 
-        public static ResultCommand NotFound()
+        public static ResultCommand NotFound(string message)
         {
-            return CreateResponse(StatusCodes.Status404NotFound);
+            return CreateResponse(StatusCodes.Status404NotFound, message);
         }
         public static ResultCommand Error()
         {
             return CreateResponse(StatusCodes.Status500InternalServerError);
         }
+        public static ResultCommand Ok(string message)
+        {
+            return CreateResponse(StatusCodes.Status200OK, message);
+        }
         public static ResultCommand Ok()
         {
             return CreateResponse(StatusCodes.Status200OK);
+        }
+
+        public static ResultCommand CreateResponse(int status, string message)
+        {
+            return new ResultCommand { Status = status, Message = message };
         }
         public static ResultCommand CreateResponse(int status)
         {

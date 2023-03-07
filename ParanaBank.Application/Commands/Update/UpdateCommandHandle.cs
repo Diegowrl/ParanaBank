@@ -28,7 +28,7 @@ namespace ParanaBank.Application.Commands.Update
             if (_clientRepository.GetByEmailAndUser(client).Result is not null)
             {
                 _logger.LogError("User allready registered by email or user");
-                return ResultCommand.Ok();
+                return ResultCommand.Ok("User allready registered by email or user");
             }
 
             try

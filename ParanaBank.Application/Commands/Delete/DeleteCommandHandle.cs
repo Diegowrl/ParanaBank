@@ -24,7 +24,7 @@ namespace ParanaBank.Application.Commands.Delete
             if (client is null)
             {
                 _logger.LogError("User not found by email");
-                return ResultCommand.NotFound();
+                return ResultCommand.NotFound("User not found by email");
             }
 
             try

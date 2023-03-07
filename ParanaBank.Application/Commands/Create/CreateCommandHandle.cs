@@ -29,7 +29,7 @@ namespace ParanaBank.Application.Commands.Create
             if (_clientRepository.GetByEmailOrUser(client).Result is not null)
             {
                 _logger.LogError("User allready found by email or user");
-                return ResultCommand.Ok();
+                return ResultCommand.Ok("User allready found by email or user");
             }
 
             client.CreateUser();

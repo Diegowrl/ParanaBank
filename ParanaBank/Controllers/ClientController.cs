@@ -28,6 +28,8 @@ namespace ParanaBank.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(ClientModel client)
         {
+            _logger.LogInformation($"Request receive to to register user {client.User}");
+
             var result = await _mediator.Send(new CreateCommand(client));
 
             return StatusCode(result.Status);
@@ -36,6 +38,8 @@ namespace ParanaBank.Controllers
         [HttpGet]
         public async Task<IEnumerable<Client>> Get()
         {
+            _logger.LogInformation($"Request receive to get all clients on Datetime {DateTime.Now} ");
+
             var result = await _clientRepository.GetAll();
 
            return result;
@@ -45,6 +49,7 @@ namespace ParanaBank.Controllers
         [Route("{email}")]
         public async Task<Client> GetByEmail(string email)
         {
+            _logger.LogInformation($"Email {email} was receive to get on Database");
 
             var result = await _clientRepository.GetByEmail(email);
 
@@ -52,11 +57,13 @@ namespace ParanaBank.Controllers
         }
 
         [HttpPut]
-        public async Task<int> Update([FromBody] ClientModel client)
+        public async Task<IActionResult> Update([FromBody] ClientModel client)
         {
+            _logger.LogInformation($"Request receive to to update user {client.User}");
+
             var result = await _mediator.Send(new UpdateCommand(client));
 
-            return await Task.FromResult(0);
+            return StatusCode(result.Status);
         }
 
 
@@ -64,6 +71,7 @@ namespace ParanaBank.Controllers
         [Route("{email}")]
         public async Task<IActionResult> Delete(string email)
         {
+            _logger.LogInformation($"Request receive to to delete user {email}");
 
             var result = await _mediator.Send(new DeleteCommand(email));
 
