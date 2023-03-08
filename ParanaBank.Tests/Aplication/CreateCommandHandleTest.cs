@@ -38,7 +38,7 @@ namespace ParanaBank.Tests.Aplication
         }
 
         [Fact]
-        public async Task HandleShouldBeOk()
+        public async Task HandleShouldBeFound()
         {
             var client = new Client { UserName = "Diego", Email = "Diegowrl@hotmail.com" };
             var taskClient = Task.FromResult<Client>(client);
@@ -52,7 +52,7 @@ namespace ParanaBank.Tests.Aplication
 
             _clientRepository.Verify(m => m.Add(It.IsAny<Client>()), Times.Never);
             _clientRepository.Verify(m => m.GetByEmailOrUser(It.IsAny<Client>()), Times.Once);
-            result.Status.Should().Be(StatusCodes.Status200OK);
+            result.Status.Should().Be(StatusCodes.Status302Found);
         }
 
         [Fact]

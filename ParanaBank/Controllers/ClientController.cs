@@ -9,6 +9,10 @@ using ParanaBank.Domain.Interfaces;
 
 namespace ParanaBank.Controllers
 {
+    
+    /// <summary>
+    /// Requests about clients
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class ClientController : ControllerBase
@@ -25,6 +29,14 @@ namespace ParanaBank.Controllers
             _mediator = mediator;
         }
 
+        /// <summary>
+		/// Accept a client to register
+		/// </summary>
+		/// <param name="client">ProviderPackageRequest</param>
+		/// <returns>Include a client to be register.</returns>
+		/// <response code="200">Created a client</response>
+		/// <response code="302">Client was found</response>
+		/// <response code="500">Error on Database</response>
         [HttpPost]
         public async Task<IActionResult> Post(ClientModel client)
         {
@@ -35,6 +47,11 @@ namespace ParanaBank.Controllers
             return StatusCode(result.Status, result.Message);
         }
 
+        /// <summary>
+		/// Accept a request to get all clients
+		/// </summary>
+		/// <returns>Accept a request to get all clients</returns>
+		/// <response code="200">Get a client</response>
         [HttpGet]
         public async Task<IActionResult> Get()
         {
