@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.10.0" />
+    <PackageReference Include="Moq" Version="4.18.4" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ParanaBank.Application\ParanaBank.Application.csproj" />
+    <ProjectReference Include="..\ParanaBank.CrossCutting\ParanaBank.CrossCutting.csproj" />
+    <ProjectReference Include="..\ParanaBank.Domain\ParanaBank.Domain.csproj" />
+    <ProjectReference Include="..\ParanaBank.Infrastructure\ParanaBank.Infrastructure.csproj" />
+    <ProjectReference Include="..\ParanaBank\ParanaBank.Api.csproj" />
+  </ItemGroup>
+
+</Project>

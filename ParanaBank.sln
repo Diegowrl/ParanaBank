@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParanaBank", "ParanaBank\ParanaBank.csproj", "{225C95D1-AA85-4816-BA13-E2D4F2B3965E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParanaBank.Api", "ParanaBank\ParanaBank.Api.csproj", "{225C95D1-AA85-4816-BA13-E2D4F2B3965E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParanaBank.Application", "ParanaBank.Application\ParanaBank.Application.csproj", "{5B058BE0-8F39-447B-9F97-F18EE923616B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParanaBank.Infrastructure", "ParanaBank.Infrastructure\ParanaBank.Infrastructure.csproj", "{013D2268-1B99-4DF7-BA90-70C2049D27BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParanaBank.Domain", "ParanaBank.Domain\ParanaBank.Domain.csproj", "{40BF0588-99B7-4DA2-B079-9932223D1900}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParanaBank.CrossCutting", "ParanaBank.CrossCutting\ParanaBank.CrossCutting.csproj", "{6BF6FE77-6879-498F-B28C-C044F7710FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParanaBank.Tests", "ParanaBank.Tests\ParanaBank.Tests.csproj", "{CEE03342-9801-4E22-B732-5C8644C80A4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{225C95D1-AA85-4816-BA13-E2D4F2B3965E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{225C95D1-AA85-4816-BA13-E2D4F2B3965E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{225C95D1-AA85-4816-BA13-E2D4F2B3965E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B058BE0-8F39-447B-9F97-F18EE923616B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B058BE0-8F39-447B-9F97-F18EE923616B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B058BE0-8F39-447B-9F97-F18EE923616B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B058BE0-8F39-447B-9F97-F18EE923616B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{013D2268-1B99-4DF7-BA90-70C2049D27BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013D2268-1B99-4DF7-BA90-70C2049D27BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013D2268-1B99-4DF7-BA90-70C2049D27BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013D2268-1B99-4DF7-BA90-70C2049D27BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40BF0588-99B7-4DA2-B079-9932223D1900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40BF0588-99B7-4DA2-B079-9932223D1900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40BF0588-99B7-4DA2-B079-9932223D1900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40BF0588-99B7-4DA2-B079-9932223D1900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BF6FE77-6879-498F-B28C-C044F7710FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF6FE77-6879-498F-B28C-C044F7710FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF6FE77-6879-498F-B28C-C044F7710FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF6FE77-6879-498F-B28C-C044F7710FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE03342-9801-4E22-B732-5C8644C80A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE03342-9801-4E22-B732-5C8644C80A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE03342-9801-4E22-B732-5C8644C80A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE03342-9801-4E22-B732-5C8644C80A4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

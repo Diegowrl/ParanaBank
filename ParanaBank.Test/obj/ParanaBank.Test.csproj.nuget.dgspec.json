@@ -1,0 +1,474 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\project\\Git\\ParanaBank\\ParanaBank.Test\\ParanaBank.Test.csproj": {}
+  },
+  "projects": {
+    "D:\\project\\Git\\ParanaBank\\ParanaBank.Application\\ParanaBank.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\project\\Git\\ParanaBank\\ParanaBank.Application\\ParanaBank.Application.csproj",
+        "projectName": "ParanaBank.Application",
+        "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Application\\ParanaBank.Application.csproj",
+        "packagesPath": "C:\\Users\\Maquina_2.0\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Maquina_2.0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\project\\Git\\ParanaBank\\ParanaBank.CrossCutting\\ParanaBank.CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\project\\Git\\ParanaBank\\ParanaBank.CrossCutting\\ParanaBank.CrossCutting.csproj",
+        "projectName": "ParanaBank.CrossCutting",
+        "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.CrossCutting\\ParanaBank.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\Maquina_2.0\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.CrossCutting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Maquina_2.0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.Application\\ParanaBank.Application.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Application\\ParanaBank.Application.csproj"
+              },
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.Infrastructure\\ParanaBank.Infrastructure.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Infrastructure\\ParanaBank.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj",
+        "projectName": "ParanaBank.Domain",
+        "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj",
+        "packagesPath": "C:\\Users\\Maquina_2.0\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Maquina_2.0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\project\\Git\\ParanaBank\\ParanaBank.Infrastructure\\ParanaBank.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\project\\Git\\ParanaBank\\ParanaBank.Infrastructure\\ParanaBank.Infrastructure.csproj",
+        "projectName": "ParanaBank.Infrastructure",
+        "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Infrastructure\\ParanaBank.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Maquina_2.0\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Maquina_2.0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\project\\Git\\ParanaBank\\ParanaBank.Test\\ParanaBank.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\project\\Git\\ParanaBank\\ParanaBank.Test\\ParanaBank.Test.csproj",
+        "projectName": "ParanaBank.Test",
+        "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Test\\ParanaBank.Test.csproj",
+        "packagesPath": "C:\\Users\\Maquina_2.0\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Maquina_2.0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.Application\\ParanaBank.Application.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Application\\ParanaBank.Application.csproj"
+              },
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.CrossCutting\\ParanaBank.CrossCutting.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.CrossCutting\\ParanaBank.CrossCutting.csproj"
+              },
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj"
+              },
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.Infrastructure\\ParanaBank.Infrastructure.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Infrastructure\\ParanaBank.Infrastructure.csproj"
+              },
+              "D:\\project\\Git\\ParanaBank\\ParanaBank\\ParanaBank.Api.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank\\ParanaBank.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.10.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\project\\Git\\ParanaBank\\ParanaBank\\ParanaBank.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\project\\Git\\ParanaBank\\ParanaBank\\ParanaBank.Api.csproj",
+        "projectName": "ParanaBank.Api",
+        "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank\\ParanaBank.Api.csproj",
+        "packagesPath": "C:\\Users\\Maquina_2.0\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\Git\\ParanaBank\\ParanaBank\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Maquina_2.0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.Application\\ParanaBank.Application.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Application\\ParanaBank.Application.csproj"
+              },
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.CrossCutting\\ParanaBank.CrossCutting.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.CrossCutting\\ParanaBank.CrossCutting.csproj"
+              },
+              "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj": {
+                "projectPath": "D:\\project\\Git\\ParanaBank\\ParanaBank.Domain\\ParanaBank.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

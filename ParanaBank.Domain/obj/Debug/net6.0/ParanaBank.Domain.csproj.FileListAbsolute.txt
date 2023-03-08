@@ -1,0 +1,12 @@
+D:\project\Git\ParanaBank\ParanaBank.Domain\bin\Debug\net6.0\ParanaBank.Domain.deps.json
+D:\project\Git\ParanaBank\ParanaBank.Domain\bin\Debug\net6.0\ParanaBank.Domain.dll
+D:\project\Git\ParanaBank\ParanaBank.Domain\bin\Debug\net6.0\ParanaBank.Domain.pdb
+D:\project\Git\ParanaBank\ParanaBank.Domain\obj\Debug\net6.0\ParanaBank.Domain.csproj.AssemblyReference.cache
+D:\project\Git\ParanaBank\ParanaBank.Domain\obj\Debug\net6.0\ParanaBank.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\Git\ParanaBank\ParanaBank.Domain\obj\Debug\net6.0\ParanaBank.Domain.AssemblyInfoInputs.cache
+D:\project\Git\ParanaBank\ParanaBank.Domain\obj\Debug\net6.0\ParanaBank.Domain.AssemblyInfo.cs
+D:\project\Git\ParanaBank\ParanaBank.Domain\obj\Debug\net6.0\ParanaBank.Domain.csproj.CoreCompileInputs.cache
+D:\project\Git\ParanaBank\ParanaBank.Domain\obj\Debug\net6.0\ParanaBank.Domain.dll
+D:\project\Git\ParanaBank\ParanaBank.Domain\obj\Debug\net6.0\refint\ParanaBank.Domain.dll
+D:\project\Git\ParanaBank\ParanaBank.Domain\obj\Debug\net6.0\ParanaBank.Domain.pdb
+D:\project\Git\ParanaBank\ParanaBank.Domain\obj\Debug\net6.0\ref\ParanaBank.Domain.dll

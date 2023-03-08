@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "DZTQPu4IYCt2XOUXQoW320FXdgdvS/BR9Fe3Sk5sFG4=",
-  "Source": "ParanaBank",
-  "BasePath": "_content/ParanaBank",
+  "Hash": "8EAOMIsxrlaLlXqF6Wi/NVpu97yGvCJW/L+NGEZWqqI=",
+  "Source": "ParanaBank.Api",
+  "BasePath": "_content/ParanaBank.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
