@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.8393" branch-rate="0.5" version="1.9" timestamp="1678258776" lines-covered="256" lines-valid="305" branches-covered="4" branches-valid="8">
+<coverage line-rate="0.9347" branch-rate="0.75" version="1.9" timestamp="1678301238" lines-covered="301" lines-valid="322" branches-covered="6" branches-valid="8">
   <sources>
     <source>D:\project\Git\ParanaBank\</source>
     <source>C:\</source>
@@ -189,204 +189,116 @@
         </class>
       </classes>
     </package>
-    <package name="ParanaBank.Application" line-rate="0.7272" branch-rate="0.6666" complexity="26">
+    <package name="ParanaBank.Application" line-rate="1" branch-rate="1" complexity="17">
       <classes>
         <class name="ParanaBank.Application.Models.ClientModel" filename="ParanaBank.Application\Models\ClientModel.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="14" branch="False" />
+                <line number="8" hits="20" branch="False" />
               </lines>
             </method>
             <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="10" branch="False" />
+                <line number="13" hits="16" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="8" hits="14" branch="False" />
-            <line number="13" hits="10" branch="False" />
+            <line number="8" hits="20" branch="False" />
+            <line number="13" hits="16" branch="False" />
           </lines>
         </class>
-        <class name="ParanaBank.Application.Models.ResultCommand" filename="ParanaBank.Application\Models\ResultCommand.cs" line-rate="0.7391" branch-rate="1" complexity="9">
+        <class name="ParanaBank.Application.Commands.Update.UpdateCommand" filename="ParanaBank.Application\Commands\Update\UpdateCommand.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
-            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="get_Client" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="24" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="8" hits="18" branch="False" />
-              </lines>
-            </method>
-            <method name="NotFound" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="11" hits="1" branch="False" />
-                <line number="12" hits="1" branch="False" />
-                <line number="13" hits="1" branch="False" />
-              </lines>
-            </method>
-            <method name="Error" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="15" hits="2" branch="False" />
-                <line number="16" hits="2" branch="False" />
-                <line number="17" hits="2" branch="False" />
-              </lines>
-            </method>
-            <method name="Ok" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="19" hits="2" branch="False" />
-                <line number="20" hits="2" branch="False" />
-                <line number="21" hits="2" branch="False" />
-              </lines>
-            </method>
-            <method name="Created" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="23" hits="1" branch="False" />
-                <line number="24" hits="1" branch="False" />
-                <line number="25" hits="1" branch="False" />
-              </lines>
-            </method>
-            <method name="Ok" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="27" hits="0" branch="False" />
-                <line number="28" hits="0" branch="False" />
-                <line number="29" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="CreateResponse" signature="(System.Int32,System.String)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="32" hits="6" branch="False" />
-                <line number="33" hits="6" branch="False" />
-                <line number="34" hits="6" branch="False" />
-              </lines>
-            </method>
-            <method name="CreateResponse" signature="(System.Int32)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="36" hits="0" branch="False" />
-                <line number="37" hits="0" branch="False" />
-                <line number="38" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="7" hits="24" branch="False" />
-            <line number="8" hits="18" branch="False" />
-            <line number="11" hits="1" branch="False" />
-            <line number="12" hits="1" branch="False" />
-            <line number="13" hits="1" branch="False" />
-            <line number="15" hits="2" branch="False" />
-            <line number="16" hits="2" branch="False" />
-            <line number="17" hits="2" branch="False" />
-            <line number="19" hits="2" branch="False" />
-            <line number="20" hits="2" branch="False" />
-            <line number="21" hits="2" branch="False" />
-            <line number="23" hits="1" branch="False" />
-            <line number="24" hits="1" branch="False" />
-            <line number="25" hits="1" branch="False" />
-            <line number="27" hits="0" branch="False" />
-            <line number="28" hits="0" branch="False" />
-            <line number="29" hits="0" branch="False" />
-            <line number="32" hits="6" branch="False" />
-            <line number="33" hits="6" branch="False" />
-            <line number="34" hits="6" branch="False" />
-            <line number="36" hits="0" branch="False" />
-            <line number="37" hits="0" branch="False" />
-            <line number="38" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="ParanaBank.Application.Commands.Update.UpdateCommand" filename="ParanaBank.Application\Commands\Update\UpdateCommand.cs" line-rate="0.8" branch-rate="1" complexity="2">
-          <methods>
-            <method name="get_Client" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="12" hits="0" branch="False" />
+                <line number="12" hits="6" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(ParanaBank.Application.Models.ClientModel)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="2" branch="False" />
-                <line number="9" hits="2" branch="False" />
-                <line number="10" hits="2" branch="False" />
-                <line number="11" hits="2" branch="False" />
+                <line number="8" hits="5" branch="False" />
+                <line number="9" hits="5" branch="False" />
+                <line number="10" hits="5" branch="False" />
+                <line number="11" hits="5" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="12" hits="0" branch="False" />
-            <line number="8" hits="2" branch="False" />
-            <line number="9" hits="2" branch="False" />
-            <line number="10" hits="2" branch="False" />
-            <line number="11" hits="2" branch="False" />
+            <line number="12" hits="6" branch="False" />
+            <line number="8" hits="5" branch="False" />
+            <line number="9" hits="5" branch="False" />
+            <line number="10" hits="5" branch="False" />
+            <line number="11" hits="5" branch="False" />
           </lines>
         </class>
-        <class name="ParanaBank.Application.Commands.Update.UpdateCommandHandle" filename="ParanaBank.Application\Commands\Update\UpdateCommandHandle.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="ParanaBank.Application.Commands.Update.UpdateCommandHandle" filename="ParanaBank.Application\Commands\Update\UpdateCommandHandle.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name=".ctor" signature="(ParanaBank.Domain.Interfaces.IClientRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1&lt;ParanaBank.Application.Commands.Update.UpdateCommandHandle&gt;)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(ParanaBank.Domain.Interfaces.IClientRepository,Microsoft.Extensions.Logging.ILogger`1&lt;ParanaBank.Application.Commands.Update.UpdateCommandHandle&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
-                <line number="18" hits="0" branch="False" />
-                <line number="19" hits="0" branch="False" />
-                <line number="20" hits="0" branch="False" />
-                <line number="21" hits="0" branch="False" />
+                <line number="15" hits="3" branch="False" />
+                <line number="16" hits="3" branch="False" />
+                <line number="17" hits="3" branch="False" />
+                <line number="18" hits="3" branch="False" />
+                <line number="19" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="18" hits="0" branch="False" />
-            <line number="19" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
-            <line number="21" hits="0" branch="False" />
+            <line number="15" hits="3" branch="False" />
+            <line number="16" hits="3" branch="False" />
+            <line number="17" hits="3" branch="False" />
+            <line number="18" hits="3" branch="False" />
+            <line number="19" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="ParanaBank.Application.Commands.Update.UpdateCommandHandle/&lt;Handle&gt;d__4" filename="ParanaBank.Application\Commands\Update\UpdateCommandHandle.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="ParanaBank.Application.Commands.Update.UpdateCommandHandle/&lt;Handle&gt;d__3" filename="ParanaBank.Application\Commands\Update\UpdateCommandHandle.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="24" hits="0" branch="False" />
-                <line number="26" hits="0" branch="False" />
-                <line number="28" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="22" hits="3" branch="False" />
+                <line number="24" hits="3" branch="False" />
+                <line number="26" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="110" type="jump" coverage="0%" />
+                    <condition number="110" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="29" hits="0" branch="False" />
-                <line number="30" hits="0" branch="False" />
-                <line number="31" hits="0" branch="False" />
-                <line number="35" hits="0" branch="False" />
-                <line number="36" hits="0" branch="False" />
-                <line number="38" hits="0" branch="False" />
-                <line number="40" hits="0" branch="False" />
-                <line number="41" hits="0" branch="False" />
-                <line number="42" hits="0" branch="False" />
-                <line number="43" hits="0" branch="False" />
-                <line number="45" hits="0" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="32" hits="2" branch="False" />
+                <line number="35" hits="2" branch="False" />
+                <line number="36" hits="2" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="45" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="24" hits="0" branch="False" />
-            <line number="26" hits="0" branch="False" />
-            <line number="28" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="22" hits="3" branch="False" />
+            <line number="24" hits="3" branch="False" />
+            <line number="26" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="110" type="jump" coverage="0%" />
+                <condition number="110" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="29" hits="0" branch="False" />
-            <line number="30" hits="0" branch="False" />
-            <line number="31" hits="0" branch="False" />
-            <line number="35" hits="0" branch="False" />
-            <line number="36" hits="0" branch="False" />
-            <line number="38" hits="0" branch="False" />
-            <line number="40" hits="0" branch="False" />
-            <line number="41" hits="0" branch="False" />
-            <line number="42" hits="0" branch="False" />
-            <line number="43" hits="0" branch="False" />
-            <line number="45" hits="0" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="32" hits="2" branch="False" />
+            <line number="35" hits="2" branch="False" />
+            <line number="36" hits="2" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="45" hits="3" branch="False" />
           </lines>
         </class>
         <class name="ParanaBank.Application.Commands.Delete.DeleteCommand" filename="ParanaBank.Application\Commands\Delete\DeleteCommand.cs" line-rate="1" branch-rate="1" complexity="2">
@@ -576,9 +488,9 @@
     <package name="ParanaBank.CrossCutting" line-rate="1" branch-rate="1" complexity="0">
       <classes />
     </package>
-    <package name="ParanaBank.Domain" line-rate="0.8887999999999999" branch-rate="1" complexity="6">
+    <package name="ParanaBank.Domain" line-rate="1" branch-rate="1" complexity="7">
       <classes>
-        <class name="ParanaBank.Domain.Entity.Client" filename="ParanaBank.Domain\Entity\Client.cs" line-rate="0.8887999999999999" branch-rate="1" complexity="6">
+        <class name="ParanaBank.Domain.Entity.Client" filename="ParanaBank.Domain\Entity\Client.cs" line-rate="1" branch-rate="1" complexity="7">
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -587,12 +499,12 @@
             </method>
             <method name="get_UserName" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="6" hits="8" branch="False" />
+                <line number="6" hits="13" branch="False" />
               </lines>
             </method>
             <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="10" branch="False" />
+                <line number="7" hits="15" branch="False" />
               </lines>
             </method>
             <method name="get_CreatedAt" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -600,9 +512,9 @@
                 <line number="8" hits="2" branch="False" />
               </lines>
             </method>
-            <method name="get_UpdateAt" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_UpdateAt" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="0" branch="False" />
+                <line number="9" hits="2" branch="False" />
               </lines>
             </method>
             <method name="CreateUser" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -613,17 +525,27 @@
                 <line number="15" hits="2" branch="False" />
               </lines>
             </method>
+            <method name="UpdateUser" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="2" branch="False" />
+                <line number="19" hits="2" branch="False" />
+                <line number="20" hits="2" branch="False" />
+              </lines>
+            </method>
           </methods>
           <lines>
             <line number="5" hits="2" branch="False" />
-            <line number="6" hits="8" branch="False" />
-            <line number="7" hits="10" branch="False" />
+            <line number="6" hits="13" branch="False" />
+            <line number="7" hits="15" branch="False" />
             <line number="8" hits="2" branch="False" />
-            <line number="9" hits="0" branch="False" />
+            <line number="9" hits="2" branch="False" />
             <line number="12" hits="2" branch="False" />
             <line number="13" hits="2" branch="False" />
             <line number="14" hits="2" branch="False" />
             <line number="15" hits="2" branch="False" />
+            <line number="18" hits="2" branch="False" />
+            <line number="19" hits="2" branch="False" />
+            <line number="20" hits="2" branch="False" />
           </lines>
         </class>
       </classes>
@@ -631,7 +553,7 @@
     <package name="ParanaBank.Infrastructure" line-rate="1" branch-rate="1" complexity="0">
       <classes />
     </package>
-    <package name="ParanaBank.Tests" line-rate="0.9931" branch-rate="1" complexity="18">
+    <package name="ParanaBank.Tests" line-rate="0.9945" branch-rate="1" complexity="22">
       <classes>
         <class name="AutoGeneratedProgram" filename="Users\Maquina_2.0\.nuget\packages\microsoft.net.test.sdk\17.3.2\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -1103,6 +1025,120 @@
             <line number="51" hits="1" branch="False" />
             <line number="52" hits="1" branch="False" />
             <line number="53" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="ParanaBank.Tests.Aplication.UpdateCommandHandleTest" filename="ParanaBank.Tests\Aplication\UpdateCommandHandleTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="3" branch="False" />
+                <line number="17" hits="3" branch="False" />
+                <line number="18" hits="3" branch="False" />
+                <line number="19" hits="3" branch="False" />
+                <line number="20" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="3" branch="False" />
+            <line number="17" hits="3" branch="False" />
+            <line number="18" hits="3" branch="False" />
+            <line number="19" hits="3" branch="False" />
+            <line number="20" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="ParanaBank.Tests.Aplication.UpdateCommandHandleTest/&lt;HandleShouldBeException&gt;d__5" filename="ParanaBank.Tests\Aplication\UpdateCommandHandleTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="60" hits="1" branch="False" />
+                <line number="61" hits="1" branch="False" />
+                <line number="63" hits="1" branch="False" />
+                <line number="65" hits="1" branch="False" />
+                <line number="66" hits="1" branch="False" />
+                <line number="68" hits="1" branch="False" />
+                <line number="70" hits="1" branch="False" />
+                <line number="72" hits="1" branch="False" />
+                <line number="73" hits="1" branch="False" />
+                <line number="74" hits="1" branch="False" />
+                <line number="75" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="60" hits="1" branch="False" />
+            <line number="61" hits="1" branch="False" />
+            <line number="63" hits="1" branch="False" />
+            <line number="65" hits="1" branch="False" />
+            <line number="66" hits="1" branch="False" />
+            <line number="68" hits="1" branch="False" />
+            <line number="70" hits="1" branch="False" />
+            <line number="72" hits="1" branch="False" />
+            <line number="73" hits="1" branch="False" />
+            <line number="74" hits="1" branch="False" />
+            <line number="75" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="ParanaBank.Tests.Aplication.UpdateCommandHandleTest/&lt;HandleShouldBeFound&gt;d__4" filename="ParanaBank.Tests\Aplication\UpdateCommandHandleTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+                <line number="46" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="49" hits="1" branch="False" />
+                <line number="51" hits="1" branch="False" />
+                <line number="53" hits="1" branch="False" />
+                <line number="54" hits="1" branch="False" />
+                <line number="55" hits="1" branch="False" />
+                <line number="56" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="49" hits="1" branch="False" />
+            <line number="51" hits="1" branch="False" />
+            <line number="53" hits="1" branch="False" />
+            <line number="54" hits="1" branch="False" />
+            <line number="55" hits="1" branch="False" />
+            <line number="56" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="ParanaBank.Tests.Aplication.UpdateCommandHandleTest/&lt;HandleShouldBeOk&gt;d__3" filename="ParanaBank.Tests\Aplication\UpdateCommandHandleTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
           </lines>
         </class>
       </classes>

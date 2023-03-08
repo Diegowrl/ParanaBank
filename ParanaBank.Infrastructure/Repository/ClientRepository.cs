@@ -75,7 +75,7 @@ namespace ParanaBank.Infrastructure.Repository
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@Email", client.Email, DbType.String);
             parameters.Add("@User", client.UserName, DbType.String);
-            parameters.Add("@UpdatedAt", DateTime.Now, DbType.DateTimeOffset);
+            parameters.Add("@UpdatedAt", client.UpdateAt, DbType.DateTimeOffset);
 
             await Connection.ExecuteAsync(ClientQuery.SQL_UPDATE, parameters);
         }

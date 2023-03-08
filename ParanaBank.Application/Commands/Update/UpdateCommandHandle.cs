@@ -10,13 +10,11 @@ namespace ParanaBank.Application.Commands.Update
     public class UpdateCommandHandle : IRequestHandler<UpdateCommand, ResultCommand>
     {
         private readonly IClientRepository _clientRepository;
-        private readonly IMapper _mapper;
         private readonly ILogger<UpdateCommandHandle> _logger;
 
-        public UpdateCommandHandle(IClientRepository clientRepository, IMapper mapper, ILogger<UpdateCommandHandle> logger)
+        public UpdateCommandHandle(IClientRepository clientRepository, ILogger<UpdateCommandHandle> logger)
         {
             _clientRepository = clientRepository;
-            _mapper = mapper;
             _logger = logger;
         }
 
@@ -28,8 +26,10 @@ namespace ParanaBank.Application.Commands.Update
             if (_clientRepository.GetByEmailAndUser(client).Result is not null)
             {
                 _logger.LogError("User allready registered by email or user");
-                return ResultCommand.Ok("User allready registered by email or user");
+                return ResultCommand.Found("User allready registered by email or user");
             }
+
+            client.UpdateUser();
 
             try
             {

@@ -13,5 +13,10 @@
             Id = Guid.NewGuid();
             CreatedAt = DateTime.Now;
         }
+
+        public void UpdateUser()
+        {
+            UpdateAt = DateTime.Now;
+        }
     }
 }
