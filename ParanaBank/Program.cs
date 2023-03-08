@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Configuration;
+
 using ParanaBank.CrossCutting.IoC;
 
 var builder = WebApplication.CreateBuilder(args);

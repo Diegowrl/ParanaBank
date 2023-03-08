@@ -36,24 +36,24 @@ namespace ParanaBank.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Client>> Get()
+        public async Task<IActionResult> Get()
         {
             _logger.LogInformation($"Request receive to get all clients on Datetime {DateTime.Now} ");
 
             var result = await _clientRepository.GetAll();
 
-           return result;
+           return StatusCode(StatusCodes.Status200OK, result);
         }
 
         [HttpGet]
         [Route("{email}")]
-        public async Task<Client> GetByEmail(string email)
+        public async Task<IActionResult> GetByEmail(string email)
         {
             _logger.LogInformation($"Email {email} was receive to get on Database");
 
             var result = await _clientRepository.GetByEmail(email);
 
-            return result;
+            return StatusCode(StatusCodes.Status200OK, result);
         }
 
         [HttpPut]

@@ -19,6 +19,10 @@ namespace ParanaBank.Application.Models
         {
             return CreateResponse(StatusCodes.Status200OK, message);
         }
+        public static ResultCommand Created(string message)
+        {
+            return CreateResponse(StatusCodes.Status201Created, message);
+        }
         public static ResultCommand Ok()
         {
             return CreateResponse(StatusCodes.Status200OK);

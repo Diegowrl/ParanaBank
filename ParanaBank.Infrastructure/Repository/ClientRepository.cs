@@ -3,9 +3,11 @@ using ParanaBank.Domain.Entity;
 using ParanaBank.Domain.Interfaces;
 using ParanaBank.Infrastructure.Query;
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 
 namespace ParanaBank.Infrastructure.Repository
 {
+    [ExcludeFromCodeCoverage]
     public class ClientRepository : IClientRepository
     {
         private readonly IDbConnection Connection;

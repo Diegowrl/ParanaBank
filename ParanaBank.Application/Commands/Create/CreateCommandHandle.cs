@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using ParanaBank.Application.Commands.Delete;
 using ParanaBank.Application.Models;
 using ParanaBank.Domain.Entity;
 using ParanaBank.Domain.Interfaces;
@@ -11,13 +10,11 @@ namespace ParanaBank.Application.Commands.Create
     public class CreateCommandHandle : IRequestHandler<CreateCommand, ResultCommand>
     {
         private readonly IClientRepository _clientRepository;
-        private readonly IMapper _mapper;
         private readonly ILogger<CreateCommandHandle> _logger;
 
-        public CreateCommandHandle(IClientRepository clientRepository, IMapper mapper, ILogger<CreateCommandHandle> logger)
+        public CreateCommandHandle(IClientRepository clientRepository, ILogger<CreateCommandHandle> logger)
         {
             _clientRepository = clientRepository;
-            _mapper = mapper;
             _logger = logger;
         }
 
@@ -38,7 +35,7 @@ namespace ParanaBank.Application.Commands.Create
             {
                 await _clientRepository.Add(client);
 
-                return ResultCommand.Ok("User created");
+                return ResultCommand.Created("User created");
             }
             catch (Exception ex)
             {

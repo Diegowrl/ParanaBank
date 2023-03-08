@@ -1,5 +1,8 @@
-﻿namespace ParanaBank.Infrastructure.Query
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace ParanaBank.Infrastructure.Query
 {
+    [ExcludeFromCodeCoverage]
     internal static class ClientQuery
     {
 
